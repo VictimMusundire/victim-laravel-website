@@ -75,7 +75,7 @@
                             <li  class="{{Request::is('/') ? 'active':''}}">
                                 <a href="{{url('/')}}" class="nav-link text-left">Home</a>
                             </li>
-                            <li class="has-children {{Request::is('/meetvic') ? 'active':''}} {{Request::is('/workshops') ? 'active':''}} {{Request::is('/healthy') ? 'active':''}}">
+                            <li class="has-children {{Request::is('meetvic') ? 'active':''}} {{Request::is('workshops') ? 'active':''}} {{Request::is('healthy') ? 'active':''}}">
                                 <a href="#" class="nav-link text-left">About Victim</a>
                                 <ul class="dropdown">
                                     <!-- <li><a href="teachers.html">Our Teachers</a></li> -->
@@ -84,10 +84,10 @@
                                     <li><a href="{{url('/healthy')}}">Staying Healthy</a></li>
                                 </ul>
                             </li>
-                            <li class="{{Request::is('/portifoliovic') ? 'active':''}}">
+                            <li class="{{Request::is('portifoliovic') ? 'active':''}}">
                                 <a href="/portifoliovic" class="nav-link text-left">Portifolio</a>
                             </li>
-                            <li class="{{Request::is('/contactvic') ? 'active':''}}">
+                            <li class="{{Request::is('contactvic') ? 'active':''}}">
                                 <a href="/contactvic" class="nav-link text-left">Contact</a>
                             </li>
                         </ul>                                                                                                                                                                                                                                                                                          </ul>
