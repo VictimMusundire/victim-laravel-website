@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://victimmusundire.online/'),
+    'url' => env('APP_URL', 'https://victimmusundire.online'),
 
     'asset_url' => env('ASSET_URL', null),
 
