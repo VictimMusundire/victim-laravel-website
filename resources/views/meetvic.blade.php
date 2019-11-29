@@ -1,4 +1,10 @@
 @extends('layout/master')
+@section('title')
+    Meet Victim
+@endsection
+@section('description')
+        Victim Musundire, All about Victim
+@endsection
 @section('content')
 
     <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">
@@ -27,7 +33,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-6 mb-lg-0 mb-4">
-                    <img src="images/meetvictim.jpg" alt="Image" class="img-fluid">
+                    <img src="images/meetvictim.JPG" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-lg-5 ml-auto align-self-center">
                     <h2 class="section-title-underline mb-5">
@@ -42,7 +48,7 @@
 
             <div class="row">
                 <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-                    <img src="images/victimpath.jpg" alt="Image" class="img-fluid">
+                    <img src="images/victimpath.JPG" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-lg-5 mr-auto align-self-center order-2 order-lg-1">
                     <h2 class="section-title-underline mb-5">
@@ -106,7 +112,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="course-1-item">
                         <figure class="thumnail">
-                            <a href="course-single.html"><img src="images/victim1.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="course-single.html"><img src="images/victimm.jpg" alt="Image" class="img-fluid"></a>
 
                         </figure>
 
@@ -116,17 +122,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="course-1-item">
                         <figure class="thumnail">
-                            <a href="course-single.html"><img src="images/victim2.jpg" alt="Image" class="img-fluid"></a>
-
-                        </figure>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="course-1-item">
-                        <figure class="thumnail">
-                            <a href="course-single.html"><img src="images/victim5.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="course-single.html"><img src="images/victim2.JPG" alt="Image" class="img-fluid"></a>
 
                         </figure>
 
@@ -137,7 +133,18 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="course-1-item">
                         <figure class="thumnail">
-                            <a href="course-single.html"><img src="images/victim4.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="course-single.html"><img src="images/victim5.JPG" alt="Image" class="img-fluid"></a>
+
+                        </figure>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="course-1-item">
+                        <figure class="thumnail">
+                            <a href="course-single.html"><img src="images/victim4.JPG" alt="Image" class="img-fluid"></a>
 
                         </figure>
 
@@ -157,7 +164,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="course-1-item">
                         <figure class="thumnail">
-                            <a href="course-single.html"><img src="images/victim6.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="course-single.html"><img src="images/victim6.JPG" alt="Image" class="img-fluid"></a>
 
                         </figure>
 
@@ -166,7 +173,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="course-1-item">
                         <figure class="thumnail">
-                            <a href="course-single.html"><img src="images/victimm.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="course-single.html"><img src="images/victim1.jpg" alt="Image" class="img-fluid"></a>
 
                         </figure>
 
@@ -185,7 +192,7 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="course-1-item">
                         <figure class="thumnail">
-                            <a href="course-single.html"><img src="images/victim10.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="course-single.html"><img src="images/victim10.JPG" alt="Image" class="img-fluid"></a>
 
                         </figure>
 
@@ -199,7 +206,7 @@
             <div class="row">
                 <div class="col-lg-12 ml-auto align-self-center">
                     <h2 class="section-title-underline mb-5">
-                        <span>Still want know more</span>
+                        <span>Still want to know more</span>
                     </h2>
 
                     <ul>
@@ -232,15 +239,18 @@
                             <p>I love to read, whether with a traditional book or listening to books through Audible.
                                 I enjoy mostly nonfiction, choosing books that will teach me something I didn’t know before
                                 or something I want to learn more about. The bible is the top one in my favourite books list!</p>
-                        <h5>Traveling:</h5>
+                        <h4>Traveling:</h4>
                             <p>I will never understand people that don’t travel. I don’t think less of them or anything like that,
                                 I just don’t understand it. The world (as Discovery Channel would say) is just awesome.
-                        <h5>Spending time doing stuff besides work:</h5>
-                             <p>I don’t want to spend the best years of my
+
+                        <h4>Spending time doing stuff besides work:</h4>
+                             <p>
+                                 I don’t want to spend the best years of my
                                 life working 40-80 hours a week so that I can relax and enjoy life when I’m on hospice.
                                 Tomorrow is never guaranteed so there’s no time like right now to get out there and experience the world.
                                 This will prove to be a very lengthy conversation piece should you ever sit down with me for coffee,
-                                dinner or a drink.</p>
+                                dinner or a drink.
+                             </p>
                     </ul>
                 </div>
 

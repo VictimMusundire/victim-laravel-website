@@ -1,4 +1,11 @@
 @extends('layout/master')
+@section('title')
+     Victim Portfolio
+@endsection
+@section('description')
+        Explore Victim's projects and accomplishments
+@endsection
+
 @section('content')
 
     <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">

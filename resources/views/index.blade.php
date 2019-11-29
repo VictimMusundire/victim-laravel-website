@@ -1,4 +1,10 @@
 @extends('layout/master')
+@section('title')
+     Victim Home
+@endsection
+@section('description')
+        Victim Musundire, Web And Software Developer
+@endsection
 @section('content')
     <div class="hero-slide owl-carousel site-blocks-cover">
     </div>
@@ -9,7 +15,7 @@
 
             <div class="row">
                 <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-                    <img src="images/victim.jpg" alt="Image" class="img-fluid">
+                    <img src="images/victim.JPG" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-lg-5 mr-auto align-self-center order-2 order-lg-1 ">
                     <h2 class="section-title-underline mb-5">
@@ -47,8 +53,10 @@
                         </div>
                         <div class="feature-1-content">
                             <h2>Web Development</h2>
-                            <p>Helps to understand the real life web development and become a web developer using latest tools and trending technologies of current and future. Once completed successfully, the members are going to have their own live websites.</p>
-                            <p><a href="#" class="btn btn-outline-info px-4 rounded-1">Upcoming Events</a></p>
+                            <p>Helps to understand the real life web development and become a web developer using latest tools
+                                and trending technologies of current and future. Once completed successfully,
+                                the members are going to have their own live websites.</p>
+                            <p><a href="{{url('workshops')}}" class="btn btn-outline-info px-4 rounded-1">Upcoming Events</a></p>
                         </div>
                     </div>
                 </div>
@@ -65,7 +73,7 @@
                                 Luckily, systems integration is here to save your business.</p>
                             <p>The procedure connects multiple separate components
                                 which often come from different vendors to work as one.</p>
-                            <p><a href="#" class="btn btn-outline-info px-4 rounded-1">Upcoming Events</a></p>
+                            <p><a href="{{url('workshops')}}" class="btn btn-outline-info px-4 rounded-1">Upcoming Events</a></p>
                         </div>
                     </div>
                 </div>
@@ -76,10 +84,12 @@
                         </div>
                         <div class="feature-1-content">
                             <h2>Healthy Living </h2>
-                            <p>If you are excited about making greater things in your life; then staying health should be part of your list.</p>
-                            <p>When it comes to effective health messages, focusing on what to do, rather than what not to do will put you on the
+                            <p>If you are excited about making greater things in your life; then staying health should be
+                                part of your list.</p>
+                            <p>When it comes to effective health messages, focusing on what to do, rather than what
+                                not to do will put you on the
                                 road to success.</p>
-                            <p><a href="#" class="btn btn-outline-info px-4 rounded-1">Learn More</a></p>
+                            <p><a href="{{url('healthy')}}" class="btn btn-outline-info px-4 rounded-1">Learn More</a></p>
                         </div>
                     </div>
                 </div>

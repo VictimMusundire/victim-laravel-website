@@ -1,4 +1,10 @@
 @extends('layout/master')
+@section('title')
+        Contact Victim
+    @endsection
+@section('description')
+    Contact Victim for any help with web and software development and healthy living.
+@endsection
 @section('content')
 
     <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">
@@ -23,36 +29,33 @@
 
     <div class="site-section">
         <div class="container">
-            <form  action="POST" data-netlify="true">
+            <form  method="POST" action="{{url('/contactvic')}}">
+                {{csrf_field()}}
             <div class="row">
                 <div class="col-md-6 form-group">
                     <label for="fname">First Name</label>
-                    <input type="text" name="name" id="name" class="form-control form-control-lg">
+                    <input type="text" name="firstname" id="name" placeholder="Enter first name" required="required" class="form-control form-control-lg">
                 </div>
                 <div class="col-md-6 form-group">
                     <label for="lname">Last Name</label>
-                    <input type="text" name="surname" id="surname" class="form-control form-control-lg">
+                    <input type="text" name="lastname" id="surname" required="required" placeholder="Enter last name" class="form-control form-control-lg">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 form-group">
                     <label for="eaddress">Email Address</label>
-                    <input type="email" name="email" id="email" class="form-control form-control-lg">
+                    <input type="email" name="email" id="email" required="required" placeholder="Enter email address" class="form-control form-control-lg">
                 </div>
                 <div class="col-md-6 form-group">
-                    <label for="tel">Tel. Number</label>
-                    <input type="number" name="fone" id="fone"  class="form-control form-control-lg">
+                    <label for="tel">Cell Number</label>
+                    <input type="number" name="phone" id="fone" placeholder="Enter number" required="required"  class="form-control form-control-lg">
                 </div>
             </div>
-                <div class="row">
-                    <div class="col-md-12 form-group">
-                        <div data-netlify-recaptcha="true"></div>
-                    </div>
-                </div>
+
             <div class="row">
                 <div class="col-md-12 form-group">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="message" id="message" required="required" placeholder="Enter your message here ..." cols="30" rows="10" class="form-control"></textarea>
                 </div>
             </div>
 

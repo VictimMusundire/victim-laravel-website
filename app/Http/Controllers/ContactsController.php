@@ -2,20 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Contact;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
-class PagesController extends Controller
+
+class ContactsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function home()
+    public function index()
     {
         //
-//        $path = strstr(request()->path(), $uri);
-        return view('index');
     }
 
     /**
@@ -23,76 +24,58 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function meet()
+    public function create()
     {
         //
-        return view('meetvic');
     }
 
-
-    public function login()
-    {
-        //
-        return view('login');
-    }
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function portifolio()
+    public function store(Request $request)
     {
         //
-        return  view('portifoliovic');
+        Contact::create($request->all());
+
+        Alert::success('Thank you for your message:','I will look into it and get back to you shortly')->persistent('Dismiss');
+
+        return redirect()->route('contactvic');
     }
+
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function contact()
+    public function show(Contact $contact)
     {
         //
-        return  view('contactvic');
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function healthy()
+    public function edit(Contact $contact)
     {
         //
-        return view('healthy');
-
     }
-
-    public  function store()
-    {
-
-    }
-
-    public function workshops()
-    {
-        //
-        return view('workshops');
-
-    }
-
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Contact $contact)
     {
         //
     }
@@ -100,10 +83,10 @@ class PagesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Contact $contact)
     {
         //
     }

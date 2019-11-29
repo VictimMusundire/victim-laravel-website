@@ -1,4 +1,10 @@
 @extends('layout/master')
+@section('title')
+     Victim Workshops
+@endsection
+@section('description')
+    Find sometime to attend Victim Workshops for Web development, System Integrations and Healthy living.
+@endsection
 @section('content')
 
     <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">

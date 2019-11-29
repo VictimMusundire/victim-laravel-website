@@ -1,4 +1,10 @@
 @extends('layout/master')
+@section('title')
+    Living healthy with Victim
+@endsection
+@section('description')
+     Victim offers free support on healthy living.
+@endsection
 @section('content')
 
     <div class="site-section ftco-subscribe-1 site-blocks-cover pb-4" style="background-image: url('images/bg_1.jpg')">

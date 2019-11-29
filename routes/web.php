@@ -18,7 +18,9 @@
 Route::get('/', 'PagesController@home');
 Route::get('/meetvic', 'PagesController@meet');
 Route::get('/portifoliovic', 'PagesController@portifolio');
-Route::get('/contactvic', 'PagesController@contact');
+Route::get('/contactvic', 'PagesController@contact')->name('contactvic');
+Route::post('/contactvic','ContactsController@store');
+Route::post('/subscribe','SubscriptionsController@store');
 Route::get('/login', 'PagesController@login');
 Route::get('/healthy', 'PagesController@healthy');
 Route::get('/workshops', 'PagesController@workshops');

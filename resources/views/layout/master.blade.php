@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Victim - Home</title>
+    <title>@yield('title')</title>
+    <meta name="description" content="@yield('description')">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,6 +27,7 @@
     <link href="{{asset('css/jquery.mb.YTPlayer.min.css')}}" media="all" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="shortcut icon" href="{{asset('images/favicon.png') }}">
 
 
 
@@ -66,7 +68,7 @@
             <div class="d-flex align-items-center">
                 <div class="site-logo">
                     <a href="{{url('/')}}" class="d-block">
-                        <img src="images/logo.PNG" alt="Image" class="img-fluid">
+                        <img src="images/logo.png" alt="Image" class="img-fluid">
                     </a>
                 </div>
                 <div class="mr-auto">
@@ -125,8 +127,9 @@
                 <p>Far far away, behind the word mountains, far from the countries stay in touch with me.</p>
             </div>
             <div class="col-lg-5">
-                <form action="POST" data-netlify="true" class="d-flex">
-                    <input type="text" name="subscriptionmsg" id="subscriptionmsg" class="rounded form-control mr-2 py-3" placeholder="Enter your email">
+                <form method="POST"  class="d-flex" action="{{url('/subscribe')}}">
+                    {{csrf_field()}}
+                    <input type="email" name="email" id="subscriptionmsg" required="required" class="rounded form-control mr-2 py-3" placeholder="Enter your email">
                     <button class="btn btn-outline-light rounded py-3 px-4" type="submit">Send</button>
                 </form>
             </div>
@@ -198,9 +201,8 @@
 <script src="{{asset('js/jquery.fancybox.min.js')}}"></script>
 <script src="{{asset('js/jquery.sticky.js')}}"></script>
 <script src="{{asset('js/jquery.mb.YTPlayer.min.js')}}"></script>
-
-
 <script src="{{asset('js/main.js')}}"></script>
+@include('sweetalert::alert')
 
 </body>
 

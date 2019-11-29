@@ -3,19 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
+use App\Subscribe;
 
-class PagesController extends Controller
+class SubscriptionsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function home()
+    public function index()
     {
         //
-//        $path = strstr(request()->path(), $uri);
-        return view('index');
     }
 
     /**
@@ -23,28 +23,27 @@ class PagesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function meet()
+    public function create()
     {
         //
-        return view('meetvic');
     }
 
-
-    public function login()
-    {
-        //
-        return view('login');
-    }
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function portifolio()
+    public function store(Request $request)
     {
         //
-        return  view('portifoliovic');
+        Subscribe::create($request->all());
+
+        Alert::success('Thank you for subscribing:','You will be receiving updates on promotions, discounts and new products')->persistent('Dismiss');
+
+//        return view('meetvic');
+        return redirect()->back();
+
     }
 
     /**
@@ -53,10 +52,9 @@ class PagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function contact()
+    public function show($id)
     {
         //
-        return  view('contactvic');
     }
 
     /**
@@ -65,25 +63,10 @@ class PagesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function healthy()
+    public function edit($id)
     {
         //
-        return view('healthy');
-
     }
-
-    public  function store()
-    {
-
-    }
-
-    public function workshops()
-    {
-        //
-        return view('workshops');
-
-    }
-
 
     /**
      * Update the specified resource in storage.
@@ -95,6 +78,7 @@ class PagesController extends Controller
     public function update(Request $request, $id)
     {
         //
+
     }
 
     /**
